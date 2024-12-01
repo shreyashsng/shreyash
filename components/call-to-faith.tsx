@@ -21,26 +21,7 @@ export default function CallToFaith() {
       reference: "Romans 5:8",
       index: 3,
     },
-    {
-      text: "So, confess with your mouth that Jesus is Lord and believe in your heart that God raised Him from the dead.",
-      reference: "Romans 10:9",
-      index: 4,
-    },
-    {
-      text: "For everyone who calls on the name of the Lord will be saved.",
-      reference: "Romans 10:13",
-      index: 5,
-    },
-    {
-      text: "Therefore, since we have been justified by faith alone, we have peace with God through our Lord Jesus Christ.",
-      reference: "Romans 5:1",
-      index: 6,
-    },
-    {
-      text: "There is therefore now no condemnation for those who are in Christ Jesus!",
-      reference: "Romans 8:1",
-      index: 7,
-    },
+    
   ];
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
