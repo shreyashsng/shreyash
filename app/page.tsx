@@ -20,7 +20,7 @@ export default async function Home() {
             better artist experiences by day, designing epic web experiences by
             night."
           >
-            i am shreyash. i've been designing graphics and ui with some experience in video editing.
+            i am shreyash. i&apos;ve been designing graphics and ui with some experience in video editing.
           </p>
 
           <div className="flex justify-between gap-2" role="contentinfo">
