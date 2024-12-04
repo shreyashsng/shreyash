@@ -38,9 +38,9 @@ export default async function Home() {
 
               <p className="text-xs text-nowrap text-muted-foreground">
                 {/* {visitors.visitors === 0 ? 1 : visitors.visitors} active{" "}
-                {visitors.visitors > 1 ? "visitors" : "visitor (that's you!)"} */}
-                 1 active{" "}
-                 visitor (that's you!)
+                {visitors.visitors > 1 ? "visitors" : "visitor (that&apos;s you!)"} */}
+                1 active{" "}
+                visitor (that&apos;s you!)
               </p>
             </div>
           </div>
