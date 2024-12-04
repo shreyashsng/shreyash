@@ -20,23 +20,7 @@ export default function Work() {
       image: "/projects/61-oaks-group.avif",
       year: "Present",
     },
-    {
-      name: "The Armoury Bookshop",
-      image: "/projects/the-armoury-bookshop.avif",
-      year: "Present",
-    },
-    { name: "Stand Firm", image: null, year: "2024" },
-    { name: "Brisket and Briyani", image: null, year: "2024" },
-    { name: "Labu Consulting", image: null, year: "2024" },
-    { name: "First Principles", image: null, year: "2024" },
-    { name: "South East Psychology", image: null, year: "2024" },
-    { name: "ZSU", image: "/projects/zsu.avif", year: "2023" },
-    {
-      name: "Simply Photos",
-      image: "/projects/simply-photos.avif",
-      year: "2022",
-    },
-    { name: "Livestream", image: "/projects/sdelta.avif", year: "2022" },
+    
   ];
 
   return (

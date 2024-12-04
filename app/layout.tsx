@@ -4,14 +4,12 @@ import NowPlaying from "@/components/now-playing";
 import ReturnToIndex from "@/components/return-to-index";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
-import { UMAMI_SCRIPT_URL, UMAMI_WEBSITE_ID } from "@/lib/umami";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import {
   Inter as FontSans,
   Nanum_Myeongjo as FontSerif,
 } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -26,63 +24,63 @@ const fontSerif = FontSerif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zacchary.me"),
+  metadataBase: new URL("https://shreyashsng.me"),
   alternates: {
     types: {
-      "application/rss+xml": `https://zacchary.me/rss.xml`,
+      "application/rss+xml": `https://shreyashsng.me/rss.xml`,
     },
   },
-  applicationName: "zacchary.me",
-  authors: { name: "zpuckeridge" },
-  creator: "zpuckeridge",
-  publisher: "zpuckeridge",
+  applicationName: "shreyashsng.me",
+  authors: { name: "Shreyash Singh" },
+  creator: "shreyashsng",
+  publisher: "shreyashsng",
   generator: "Next.js",
   keywords: [
-    "zpuckeridge",
-    "zaccharypuckeridge",
-    "zaccpuckeridge",
-    "zacpuckeridge",
-    "Zacchary Puckeridge",
-    "Zacc Puckeridge",
-    "Zac Puckeridge",
-    "zacc",
-    "zac",
-    "zacchary.me",
+    "shreyashsng",
+    "shreyash singh",
+    "oyeshrey",
+    "Shreyash Singh",
+    "shreyash Singh",
+    "Shreyash singh",
+    "Shrey Singh",
+    "Shreyash",
+    "Shreyash  Singh",
+    "shreyashsng.me",
   ],
   referrer: "origin-when-cross-origin",
   icons: {
     icon: "/avatar.avif",
   },
   appleWebApp: {
-    title: "zacchary.me",
+    title: "shreyashsng.me",
     statusBarStyle: "default",
   },
   formatDetection: {
     telephone: false,
   },
   title: {
-    default: "Zacchary Puckeridge",
-    template: "%s — Zacchary Puckeridge",
+    default: "shreyash singh",
+    template: "%s — shreyash singh",
   },
   description:
-    "Christian IT Administrator working for Rising Sun Pictures. Building better artist experiences by day, Web Developer by night.",
+    "Shreyash designing by day and editing by night.",
   openGraph: {
-    url: "https://zacchary.me",
-    title: "Zacchary Puckeridge",
+    url: "https://shreyashsng.me",
+    title: "shreyash singh",
     description:
-      "Christian IT Administrator working for Rising Sun Pictures. Building better artist experiences by day, Web Developer by night.",
+      "Shreyash designing by day and editing by night.",
     images: "/avatar.avif",
     siteName: "zpuckeridge",
   },
   twitter: {
-    creator: "@zpuckeridge",
+    creator: "@shreyashsng",
     card: "summary_large_image",
     images: "/avatar.avif",
     description:
-      "Christian IT Administrator working for Rising Sun Pictures. Building better artist experiences by day, Web Developer by night.",
-    creatorId: "zpuckeridge",
-    title: "Zacchary Puckeridge",
-    site: "@zpuckeridge",
+      "Shreyash designing by day and editing by night.",
+    creatorId: "shreyashsng",
+    title: "Shreyash Singh",
+    site: "@shreyashsng",
   },
 };
 
@@ -127,7 +125,7 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
       </body>
-      <Script src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_WEBSITE_ID} />
+      {/* <Script src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_WEBSITE_ID} /> */}
     </html>
   );
 }
