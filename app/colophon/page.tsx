@@ -173,13 +173,13 @@ export default function Colophon() {
               <div className="flex w-full border-b border-muted pb-2">
                 <div className="w-2/6 text-muted-foreground">Name</div>
 
-                <div className="w-4/6">Zacchary Puckeridge</div>
+                <div className="w-4/6">Shreyash Singh</div>
               </div>
 
               <div className="flex w-full border-b border-muted pb-2">
                 <div className="w-2/6 text-muted-foreground">Location</div>
 
-                <div className="w-4/6">Brisbane, QLD</div>
+                <div className="w-4/6">Ghaziabad, IND</div>
               </div>
 
               <div className="flex w-full border-b border-muted pb-2">
