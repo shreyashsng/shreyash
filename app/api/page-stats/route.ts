@@ -70,3 +70,38 @@
 //     );
 //   }
 // }
+import { NextResponse } from "next/server";
+
+// Mock data to return when Umami is not used
+const mockStats = {
+  views: 1234,
+  visitors: 456,
+  visits: 789,
+  bounces: 12,
+  totalTime: 3456,
+};
+
+export const revalidate = 60;
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const url = searchParams.get("url");
+
+  if (!url) {
+    return NextResponse.json(
+      { error: "URL parameter is required" },
+      { status: 400 },
+    );
+  }
+
+  // Return mock data directly without using Umami
+  return NextResponse.json({
+    views: mockStats.views,
+    visitors: mockStats.visitors,
+    visits: mockStats.visits,
+    bounces: mockStats.bounces,
+    totalTime: mockStats.totalTime,
+  });
+}
+
+
