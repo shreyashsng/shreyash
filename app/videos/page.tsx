@@ -1,5 +1,4 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import Videos from "@/components/videos";
 import { allVideos } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { Metadata } from "next";
@@ -29,7 +28,7 @@ export default async function Clips() {
           </BlurFade>
         </div>
 
-        <Videos videos={videos} itemsPerPage={4} />
+        {/* <Videos videos={videos} itemsPerPage={4} /> */}
       </div>
     </>
   );

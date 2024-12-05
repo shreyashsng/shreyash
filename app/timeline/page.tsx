@@ -1,10 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import PostRendering from "@/components/posts";
-import { ArrowLeftIcon } from "@radix-ui/react-icons";
-import { allLinks, allNotes, allPosts } from "contentlayer/generated";
+import { allNotes, allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Timeline",
@@ -13,7 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function Posts() {
-  const allContent = [...allPosts, ...allNotes, ...allLinks];
+  // const allContent = [...allPosts, ...allNotes, ...allLinks];
+  const allContent = [...allPosts, ...allNotes];
 
   const content = allContent
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
@@ -48,16 +46,16 @@ export default function Posts() {
           </div>
         </BlurFade>
 
-        <BlurFade delay={0.3}>
+        {/* <BlurFade delay={0.3}>
           <PostRendering postsByYear={content} />
-        </BlurFade>
+        </BlurFade> */}
 
-        <Link
+        {/* <Link
           href="/"
           className="text-xs text-muted-foreground hover:text-blue-400 dark:hover:text-blue-600 transition"
         >
           <ArrowLeftIcon className="inline-flex" /> /
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
