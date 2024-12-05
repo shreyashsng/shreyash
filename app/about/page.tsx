@@ -3,7 +3,7 @@ import BooksSection from "@/components/books";
 import ImageWithDetails from "@/components/image-with-details";
 import LinkWithIcon from "@/components/link-with-icon";
 import BlurFade from "@/components/magicui/blur-fade";
-import MusicTracking from "@/components/music";
+// import MusicTracking from "@/components/music";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -121,9 +121,9 @@ export default function About() {
         </BlurFade>
       </div>
 
-      <BlurFade delay={0.8}>
+      {/* <BlurFade delay={0.8}>
         <MusicTracking />
-      </BlurFade>
+      </BlurFade> */}
 
       <BlurFade delay={0.9}>
         <div className="flex flex-col w-full gap-4 text-sm">
